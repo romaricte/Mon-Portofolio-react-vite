@@ -1,40 +1,40 @@
 import React from "react";
 import { footerVariants, staggerChildren } from "../../utils/motion";
 import css from "./Footer.module.scss";
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 const Footer = () => {
   return (
     <motion.section
-    variants={staggerChildren}
-    initial="hidden"
-    whileInView="show"
-    viewport={{ once: false, amount: 0.25 }}
-    className={`paddings ${css.wrapper}`}>
-      
-      
+      variants={staggerChildren}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className={`paddings ${css.wrapper}`}>
+
+
       <motion.div
-      variants={footerVariants}
-      className={`innerWidth yPaddings flexCenter ${css.container}`}>
+        variants={footerVariants}
+        className={`innerWidth yPaddings flexCenter ${css.container}`}>
         <div className={css.left}>
           <span className="primaryText">
-            Let's make something <br />
-            amazing together.
+            Faisons quelque chose d'incroyable
+            ensemble.
           </span>
           <span className="primaryText">
-            Start by <a href="mailto:zainkeepscode@gmail.com">saying hi</a>
+            Commençons par <a href="mailto:tenrom142@gmail.com">prendre un rendez-vous</a>
           </span>
         </div>
 
         <div className={css.right}>
           <div className={css.info}>
             <span className="secondaryText">Information</span>
-            <p>145 New York, FL 5467, USA</p>
+            <p>Gp Melen, Yaounde4, Cameroun</p>
           </div>
           <ul className={css.menu}>
             <li>Services</li>
-            <li>Works</li>
-            <li>Notes</li>
-            <li>Experience</li>
+            <li>Travaux</li>
+            <li>Remarques</li>
+            <li>Expérience</li>
           </ul>
         </div>
       </motion.div>

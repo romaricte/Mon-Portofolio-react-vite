@@ -14,14 +14,14 @@ const Hero = () => {
       >
         <div className={css.upperElements}>
           <motion.span className="primaryText" variants={fadeIn("right", "tween", 0.2, 1)}>
-            Hey There,
+            Salut,
             <br />
-            I'm Binjan.
+            Je m'appelle Tene.
           </motion.span>
-          <motion.span className="secondaryText"variants={fadeIn("left", "tween", 0.4, 1)}>
-            I design beautiful simple
+          <motion.span className="secondaryText" variants={fadeIn("left", "tween", 0.4, 1)}>
+            Je conçois de belles
             <br />
-            things, And I love what i do{" "}
+            choses simples, et j'aime ce que je fais{" "}
           </motion.span>
         </div>
 
@@ -29,26 +29,26 @@ const Hero = () => {
           variants={fadeIn("up", "tween", 0.3, 1)}
           className={css.person}
         >
-          <motion.img variants={slideIn("up", "tween", 0.5, 1.3)} src="./person.png" alt="" />
+          <motion.img variants={slideIn("up", "tween", 0.5, 1.3)} src="./person1.png" alt="" />
         </motion.div>
 
-        <a className={css.email} href="mailto:zainkeepscode@gmail.com">
-          zainkeepscode@gmail.com
+        <a className={css.email} href="mailto:tenrom142@gmail.com">
+          tenrom142@gmail.com
         </a>
 
         <div className={css.lowerElements}>
           <motion.div variants={fadeIn("right", "tween", 0.3, 1)} className={css.experience}>
             <div className="primaryText">10</div>
             <div className="secondaryText">
-              <div>Years</div>
-              <div>Experience</div>
+              <div>Années</div>
+              <div>D'expériences</div>
             </div>
           </motion.div>
 
           <motion.div variants={fadeIn("left", "tween", 0.5, 1)} className={css.certificate}>
             <img src="./certificate.png" alt="" />
-            <span>CERTIFIED PROFATIONAL</span>
-            <span>UI/UX DESIGNER</span>
+            <span>CERTIFICATION PROFESSIONNELLE</span>
+            <span>DEVELOPPEUR FRONT-END</span>
           </motion.div>
         </div>
       </motion.div>
